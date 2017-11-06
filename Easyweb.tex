@@ -1,0 +1,369 @@
+\documentclass[12pt,a4paper]{article}
+
+%packages used
+\usepackage[english]{babel}
+\usepackage[margin=1in,  left=1.25in]{geometry} %margins
+\usepackage{pslatex}%Times new roman font
+\usepackage{graphicx}%for images
+\usepackage{float}
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyfoot{}
+
+%beginning of document
+\begin{document}
+%declaration page
+%\thispagestyle{empty}
+\pagenumbering{roman} 
+\section*{\huge DECLARATION}
+\addcontentsline{toc}{section}{\numberline{}Declaration}
+
+It is hereby declared that the project work entitled "EasyWeb Realtime Editor" submitted to Sri Jayachamarajendra College of Engineering (SJCE), Mysore, is a record of bonafide work carried out by Abhishek Bisht under the guidance of \textbf{Prof. Trisiladevi C Nagavi}, Department of Computer Science and Engineering, SJCE, Mysore. This project work is submitted in the partial fulfilment of the requirements of the degree of BACHELOR OF ENGINEERING in Computer Science and Engineering of Visvesvaraya Technological University, Belgaum during the year 2017.\\
+\\
+\textsc{\large Abhishek Bisht\\4JC15CS001}
+
+\newpage
+%abstract page
+\linespread{1.6}
+\section*{\huge ABSTRACT}
+\addcontentsline{toc}{section}{\numberline{}Abstract}
+
+
+EasyWeb Realtime Editor is a SaaS based Cloud Computing service, in which web pages designed in HTML, CSS and JavaScript can be edited in a form closely resembling its appearance when printed or displayed  as a web page, on the world wide web. It may also be used as a web page simulator for testing of commercial websites without necessarily hosting them on a web server. \cite{SaaS}\\
+
+The main objective of the project is to simulate dynamic websites, and to provide an elegant and intuitive user interface, making it an enriching experience for users to create web pages and also to help facilitate the learning of Web Design.\\
+
+This project is a fully functional web application that is built using tools like HTML, CSS, JavaScript, jQuery and Bootstrap.\\
+
+Software-as-a-service (SaaS) is a method for delivering software applications over the Internet, on demand and typically on a subscription basis. With SaaS, cloud providers host and manage the software application and underlying infrastructure and handle any maintenance, like software upgrades and security patching. Users connect to the application over the Internet, usually with a web browser on their phone, tablet or PC.\cite{SaaS}\\
+
+Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.
+Combinesd with Cascading Style Sheets (CSS) and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages.\\
+
+jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.\cite{javascript}\\
+
+Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains HTML and CSS based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions. Unlike many web frameworks, it concerns itself with front-end development only.\cite{bootstrap}
+
+
+
+\newpage
+%acknowledgements page
+\section*{\huge ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{\numberline{}Abstract}
+
+I am profoundly grateful to \textbf{Prof. Trisiladevi C Nagavi} for her expert guidance
+and continuous encouragement throughout to see that this project rights its
+target since its commencement to its completion.\\
+
+I would also like to express my deepest appreciation towards \textbf{Dr. T N Nagabhushan},
+Principal, SJCE, Mysore and \textbf{Dr. H C Vijayalakshmi}, 
+Head of Department, Computer Science and Engineering for their ongoing support and encouragement.\\
+
+Lastly, yet most importantly i would like to express my gratitude toward my family and friends, without whose support this project would have been impossible to complete.
+
+\begin{flushright}
+{
+Abhishek Bisht
+}
+\end{flushright}
+
+
+\newpage
+%table of contents
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{Introduction}
+\subsection{Problem Statement}
+Develop a web application which facilitates creation of web pages by simulation, without having any dependencies to install on the local system and also which can be used by beginners for web development and design. Supplement the simulation of web pages with a rich graphical user interface, to attract even non-technical users to take up web design.
+
+\subsection{Objectives of the Project Work}
+The main objective of the EasyWeb Realtime Editor is to simulate dynamic websites, and to provide an elegant and intuitive user interface, making it an enriching experience for users to create web pages and also to help facilitate the learning of Web Design, all on the cloud.\cite{cloud}
+
+This application requires no additional software to run locally, and is fully hosted on the server. It can be used with any modern web browsers like Google Chrome, Apple Safari,
+Mozilla Firefox, Microsoft Internet Explorer etc.
+
+The EasyWeb Editor offers the following features and functionalities:
+\begin{enumerate}
+	\item It is a standalone application, with no additional dependencies. All processing, linking is carried out on the cloud.
+	\item HTML, CSS and JavaScript files are linked and executed in realtime (Hence reducing the overhead of maintaining different files and linking them explicitly).
+	\item Modifying/Improving the elements of the web page is very easy and intuitive as the output web page of the code is previewed as it is being coded.
+	\item Supports creation of multimedia and dynamic web sites as JavaScript scripts can be readily updated and run.
+\end{enumerate}
+
+\subsection{Applications}
+\begin{enumerate}
+\item Simulate dynamic websites on the fly.
+\item Generate a realtime preview of how the web page actually looks like without having to create it.
+\item Facilitates easy testing and debugging of the web pages
+\item Supports inline editing and documentation.
+\item Loved by users and friendly with developers, comes as a standalone web application, which is easy to integrate, customise and extend.
+\item Supports attachments including files and images.
+\end{enumerate}
+\newpage
+
+\section{System Requirements}
+\subsection{Input Requirements}
+To design a functional webpage the user must know proper syntax of the language being used. In the EasyWeb Editor also, the basic knowledge about HTML, CSS and JavaScript is required.\\
+Expected Input Requirements:
+\begin{enumerate}
+\item Precise HTML tags and their attributes with proper syntax.
+\item Cascading Stylesheets (CSS) tags with proper syntax.
+\item JavaScript functions and event handlers to make the website interactive.
+\end{enumerate}
+
+\subsection{Output Requirements}
+The output is produced in realtime as a simulation of the webpage built using the combination of given HTML, CSS and JavaScript code along with multimedia contents like graphics, hyperlinks embedded in the code.\\
+\\
+Expected Output Requirements:
+\begin{enumerate}
+\item Display real estate for the required resolution according to the target device for the website (Default: 1116 by 600 pixels).
+\item Stable internet connection for loading the required multimedia ( images and videos).
+\end{enumerate}
+\subsection{Hardware Requirements}
+Minimum System Requirements:
+\begin{enumerate}
+\item Processor: Intel Pentium 2.6 GHz 
+\item Memory: 512 MB DDR2 @800 MHz
+\item Display: Monitor with screen resolution of 1024 x 768
+\item Graphics: Intel HD 4000 series (with Open GL support)
+\end{enumerate}
+Recommended System Requirements:
+\begin{enumerate}
+\item Processor: Intel Core i3 Quad Core 2.8 GHz 
+\item Memory: 1 GB DDR3 @1333 MHz
+\item Display: Monitor with screen resolution of 1440 x 900
+\item Graphics: Intel IRIS series (with Open GL ES 2.0 support)
+\end{enumerate}
+
+\subsection{Software Requirements}
+\begin{enumerate}
+\item OS: Windows 7 or later / Mac OSX 10.6 Snow Leopard or later / Ubuntu 14.04 or later
+\item Web browser with Adobe Flash support.\cite{adobe} 
+\end{enumerate}
+
+\subsection{Functional Requirements}
+\subsubsection{System Features}
+\begin{enumerate}
+\item Realtime simulation of dynamic websites.
+\item Intuitive modification of the web page elements based on the generated preview.
+\item Full support for inline editing and documentation.
+\end{enumerate}
+
+\subsubsection{External Interface Requirements}
+\begin{enumerate}
+\item Front-End (GUI) : An elegant and intuitive is graphical user interface is provided to the user for development of web pages. It is also designed to help beginners to hone their skills in the field of web development and design.
+\item Communication Interfaces HTTP: Hyper Text Transfer Protocol is a method used to transfer or convey information on the World Wide Web. Its original purpose was to provide the way to publish and retrieve HTML pages.
+An HTTP client initiates a request by establishing Transmission Control Protocol (TCP) connection to a particular port on a remote host. An HTTP server listening on that port waits for the client to send a request message. Upon receiving request, the server sends back a sta- tus line, such as HTTP/1.1 200 OK and a message of its own, the body of which is perhaps the request file, an error message, or some other information. Resources to be accessed by HTTP are identified using Uniform Resource Identifiers (URIs) (or, more specifically, URLs). Us- ing the HTTP: or HTTPS URI schemes.
+
+\end{enumerate}
+
+\subsection{Non Functional Requirements}
+\subsubsection{Performance Requirements}
+The web server that hosts the EasyWeb Editor must be able to handle and support multiple instances of application. The time delay between request and acknowledgement  should be very small in case of online help required. Minimum time should be taken by the application to display the preview of the web pages developed by the user. In case of power failure, the data should be stored in the state that was last saved by the user.
+
+\subsubsection{Safety Requirements}
+\begin{enumerate}
+\item A robust firewall must be present for packet filtering and providing secure access to the system.
+\item Users maybe given their own User IDs to use the online service and save their designs.
+\item Advanced Encryption and Decryption algorithms may be implemented to enhance the security
+\end{enumerate}
+
+\subsubsection{Software Quality Attributes}
+There are several software quality attributes that are taken into consideration during the development of EasyWeb Realtime Editor.
+\begin{enumerate}
+\item Availability:\\EasyWeb Editor is a web based service provided to the users, it will be available as long as the hosting server is up.
+\item Interoperability:\\EasyWeb Editor is interoperable on various operating systems, thus increasing the application's usability and flexibility.
+\item Maintainability: \\ EasyWeb Editor is a SaaS based Cloud Computing service. Hence, all the updates are centralized making the maintenance convenient.
+\item Usability:\\The main purpose of developing EasyWeb Editor is to enable the users who wish to develop their web pages online and who aren't well versed with the technical aspects of coding on standalone applications like Dreamweaver, MS front page etc. to hone their skills in web development.
+\end{enumerate}
+\newpage
+
+\section{Tools and Technologies Used}
+
+EasyWeb Editor makes use of the following tools:
+\begin{enumerate}
+\item HTML:\\To create documents for the web applications.
+Images and other objects, such as interactive forms, may be embedded into the rendered page.\\
+It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+\item CSS:\\Describes the presentation of the documents written in HTML. Used in separation of document content from document presentation(styling) that includes aspects such as layouts, colors and fonts.
+Enforces a common look and feel to all the documents.\cite{css}
+\item JavaScript: \\ Provides the required framework for making the websites interactive. Used to control web pages integrated with HTML and CSS.
+Provides certain built in control for validating forms.
+Provides a platform to separate handling of events from HTML code.\cite{javascript}
+\item Bootstrap:\\Bootstrap is a free and open-source front-end web framework for designing websites and web applications. It contains HTML and CSS based design templates for typography, forms, buttons, navigation and other interface components, as well as optional JavaScript extensions.
+Unlike many web frameworks, it concerns itself with front-end development only.\cite{bootstrap}
+\item WAMP/XAMPP:\\WAMP stands for ?Windows, Apache, Microsoft, PHP. WAMP is often installed as a software bundle and is used in web development and internal testing of web pages.\\
+XAMPP stands for Cross Platform(X), Apache(A), MariaDB, PHP and Perl. It creates a local web server for testing and deployment of web pages.
+\end{enumerate}
+\newpage
+
+\section{System Design}
+Software-as-a-service (SaaS) is a model of software deployment in cloud computing, where an application is hosted as a service provided to customers across the Internet. By eliminating the need to install and run the application on the customer?s own computer, SaaS alleviates the customer?s burden of software maintenance, ongoing operation, and support. It reduces upfront expense of software purchases through on-demand pricing for the required services.
+
+Advantages over conventional systems:
+\begin{enumerate}
+\item It is possible to create a web development tool which works on the cloud and helps in creating web pages online.
+\item It has wide outreach as users across the globe who have basic knowledge of computers and internet can login and use the service.
+\item Web development can be made simple and portable.
+\item Centralized software updates maybe performed to make the system evolve with the new technologies in the market.
+\end{enumerate}
+
+\subsection{Data}
+File and Data formats\\
+The input data will be in the form of HTML code, Markup files, source files, JavaScript scripts.
+User can save the edited file on the cloud for future reference.
+
+\subsection{Code}
+The most radical core functions of the EasyWeb Editor are as follows:
+\begin{enumerate}
+\item The Ready() Function:\\
+\\
+\textbf{\$(document).ready(function(){\\
+       var p=\$("\#preview");}}\\
+ \\The ready event occurs when the DOM (document object model) has been loaded.
+Because this event occurs after the document is ready, it is a good place to have all other jQuery events and functions. Like in the example above.
+The ready() method specifies what happens when a ready event occurs.
+\item live() Function:\\
+\\
+\textbf{ \$("\#html").live(?keyup?,function(){
+          p.find("\#htmlpr").html(\$(this).val());}}\\
+\\
+The live() method attaches one or more event handlers for selected elements, and specifies a function to run when the events occur.
+\item find() and append() Functions:\\
+\\
+
+\textbf{ \$("\#upjs").live(?click?,function(){\\
+            p.find("\#jspr").remove();\\
+            p.append(?<script id="jspr">?+"\$(document).ready(function());\\
+            </script>?);}}\\
+\\
+The find() method returns the value of the first element in an array that pass a test (provided as a function).
+The .append() method of jQuery inserts the specified content as the last child of each element in the jQuery collection (To insert it as the first child, use .prepend()).\\
+
+\end{enumerate}
+\newpage
+\section{System Implementation}
+
+The editor system is implemented with the help of markup language, HTML. Along with HTML, CSS, jQuery and JavaScript are used to make the development easier and efficient. Bootstrap framework has been used to develop a high quality front-end GUI.\\
+
+The main JavaScript code responsible for running the EasyWeb Editor has the functions defined and linked to the calls through DOM object modelling.
+\begin{figure}[H]
+\centering
+\includegraphics[height=4in]{/Users/abhi/Desktop/scr}
+\end{figure}
+
+\subsection{Screenshots of output}
+\begin{figure}[H]
+\centering
+\includegraphics[height=4in]{/Users/abhi/Desktop/scr1}
+\caption{Hompage 1}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3.5in]{/Users/abhi/Desktop/scr2}
+\caption{Hompage 2}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{/Users/abhi/Desktop/scr3}
+\caption{Hompage 3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{/Users/abhi/Desktop/scr4}
+\caption{Hompage 4}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3.5in]{/Users/abhi/Desktop/scr5}
+\caption{Hompage 5}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[height=3in]{/Users/abhi/Desktop/scr6}
+\caption{HTML, CSS and JavaScript simulation}
+\end{figure}
+
+\newpage
+\section{System Testing and Result Analysis}
+In order to overcome the drawbacks of existing HTML based editors (installations, no centralized updations, unnecessary payment for features that are not going to be utilized etc), the need to be able to offer clients the opportunity to develop web pages online. This project?s goal is provide a basic online web page development.\\
+
+The testing is divided into two sub stages:
+\begin{enumerate}
+\item Unit and integration level adherence to coding standards and successful communication between units.
+\item The items to be tested includes, images, tables, horizontal lines, radio button, checkbox, text field, label, hyperlinks.
+\end{enumerate}
+
+\subsection{Features to be tested}
+Testing is performed manually and the browser will be brought down while
+the testing is carried out.
+The entrance criteria?s for each phase of testing must be met before the next phase can commence.
+\begin{enumerate}
+\item Accessibility
+\item Coding Standards
+\item Compatibility
+\item Functional
+\item Validation of Forms
+\item Connectivity
+\item Scalability
+\item Security
+\item Usability
+\end{enumerate}
+
+\subsection{Test Deliverables}
+The following documents will be generated as a result of these testing activities:
+\begin{enumerate}
+\item Master test plan (MTP - this document)
+\item Test input and output data (Test cases).
+\end{enumerate}
+
+\subsection{Coding Standards}
+Each of the units of code that make up the module being tested (typically a single fully functional Web page) must be coded to all of the following coding standards, any deviations from the standard must be documented and approved.\\
+The code must pass the following syntax and design requirements:
+\begin{enumerate}
+\item Each unit of code has been inherited or copied from the most appropriate object class or Template.
+\item  HTML code must be coded to the W3C HTML 4.0 standard and vali- dated via the W3C validation service.
+\item The browser places the cursor on the most appropriate field/control
+when the Form is first viewed.
+\item All data entry fields are checked for invalid data and an appropriate error message is displayed if the data is found to be invalid.
+\item Using the browsers Tab key allows the client to tab through the input fields on the Form in a top to bottom, left to right order.
+\item All validations are performed (and error messages displayed) in a top- down, left-to-right Fashion.
+\item Using equivalence partitioning techniques, all data entry fields will be checked to ensure that they are able to accept valid values and that their error checking routines can handle invalid data appropriately.
+\end{enumerate}
+\newpage
+\section{Conclusion and Future Work}
+An attempt is made to develop a online HTML, CSS and JavaScript editor with the aim of creating web pages on the fly and without the overhead of maintaining many files for a single web page.\\
+
+In future work, this project can be extended to Debugger, Syntax highlighting, Memory an traffic management, Spell check, User's site management, Facility to design dynamic web pages.\\
+
+The purpose and objective of this project is achieved. By providing extremely rich graphical user interface, web page designing is easy and in an aesthetic form. Flexibility in designing makes user explore their imagination and thus, even a novice user can dream and accomplish their wish of web page designing.\\
+
+It can also be integrated with an IDE to account for advanced development of web pages. It will help reduce the overhead of linking HTML code with CSS and JavaScript code, and provide realtime output in the console.
+\newpage
+\begin{thebibliography}{1}
+
+  \bibitem{adobe} Adobe Flash Player, http://www.adobe.com/products/flashplayer.html
+  \bibitem{bootstrap}  W3 Schools Bootstrap Tutorials, https://www.w3schools.com/bootstrap/
+  \bibitem{cloud} Google Cloud JavaScript Libraries, https://cloud.google.com/compute/docs/tutorials/javascript-guide
+  \bibitem{css} Tutorial Points CSS, https://www.tutorialspoint.com/css/
+  \bibitem{javascript} JavaScript, https://www.javascript.com/
+
+ \bibitem{SaaS}  Microsoft Azure SaaS, https://azure.microsoft.com/en-in/overview/what-is-cloud-computing/
+
+
+
+  \end{thebibliography}
+
+\end{document}
